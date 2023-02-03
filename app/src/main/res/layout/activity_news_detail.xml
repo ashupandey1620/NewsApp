@@ -11,56 +11,83 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toolbar"
-        app:title="News App"
-        android:background="@color/black_shade_1"
-        app:titleTextColor="@color/yellow"
+        android:id="@+id/idtoolbar">
 
-        />
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dp"
+                android:textAlignment="center"
+                android:text="YOUR NEWS"
+                android:background="@color/black_shade_1"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
 
      <ScrollView
          android:layout_above="@+id/idBtnReadNews"
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         android:layout_below="@+id/toolbar">
+         android:layout_below="@+id/idtoolbar">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
 
-                    <RelativeLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent">
-
-                <ImageView
+             <ImageView
+                 android:id="@+id/idIVnews"
                  android:layout_width="match_parent"
                  android:layout_height="200dp"
-                 android:scaleType="centerCrop"
-                 android:id="@+id/idIVnews"
-                 android:layout_margin="3dp"
+                 android:layout_marginStart="3dp"
+                 android:layout_marginLeft="3dp"
+                 android:layout_marginTop="3dp"
+                 android:layout_marginEnd="3dp"
+                 android:layout_marginRight="3dp"
+                 android:layout_marginBottom="3dp"
                  android:padding="3dp"
-                 />
-                 <TextView
-                 android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:text="Title"
-                 android:id="@+id/idTVTitle"
-                 android:layout_below="@id/idIVnews"
-                 android:textColor="@color/yellow"
-                 android:textStyle="bold"
-                 android:textSize="20sp"
-                 android:padding="4dp"
-                 android:layout_margin="4dp"
-                 />
+                 android:scaleType="centerCrop" />
 
-                <TextView
+             <TextView
+                 android:id="@+id/idTVTitle"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
-                 android:text="ellaborate"
-                 android:layout_below="@id/idTVTitle"
-                 android:layout_margin="4dp"
+                 android:layout_below="@id/idIVnews"
+                 android:layout_marginStart="4dp"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginTop="4dp"
+                 android:layout_marginEnd="4dp"
+                 android:layout_marginRight="4dp"
+                 android:layout_marginBottom="4dp"
                  android:padding="4dp"
-                 android:textColor="@color/white"
+                 android:text="Title"
+                 android:textColor="@color/yellow"
+                 android:textSize="20sp"
+                 android:textStyle="bold" />
+
+             <TextView
                  android:id="@+id/idEllaborate"
-                 android:textSize="18sp"
-                 />
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/idTVTitle"
+                 android:layout_marginStart="4dp"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginTop="4dp"
+                 android:layout_marginEnd="4dp"
+                 android:layout_marginRight="4dp"
+                 android:layout_marginBottom="4dp"
+                 android:padding="4dp"
+                 android:text="elaborate"
+                 android:textColor="@color/white"
+                 android:textSize="18sp" />
 
                 <TextView
                  android:layout_width="match_parent"
@@ -74,6 +101,7 @@
                  />
          </RelativeLayout>
      </ScrollView>
+
     <Button
         android:id="@+id/idBtnReadNews"
         android:layout_width="match_parent"

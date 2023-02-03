@@ -32,14 +32,14 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVhorizonatal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/catagory_items"
-        android:id="@+id/idRVhorizonatal"
-        android:orientation="horizontal"
         android:layout_below="@+id/idToolbar"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        />
+        tools:listitem="@layout/catagory_items" />
 
     <androidx.recyclerview.widget.RecyclerView
         tools:listitem="@layout/news_items_rv"

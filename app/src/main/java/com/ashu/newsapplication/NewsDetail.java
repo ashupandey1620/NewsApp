@@ -9,13 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.squareup.picasso.Picasso;
 
 public class NewsDetail extends AppCompatActivity {
     String title,desc,content,imageURL,url;
     private TextView titleTV,subDescTV,contentTV;
-    private ImageView newsIV;
+    private ImageView newsTV;
     private Button readNewsBtn;
 
     @Override
@@ -28,20 +27,22 @@ public class NewsDetail extends AppCompatActivity {
         imageURL = getIntent().getStringExtra("image");
         url = getIntent().getStringExtra("url");
 
+        Picasso.get().load(imageURL).into(newsTV);
+
         titleTV= findViewById(R.id.idTVTitle);
         subDescTV= findViewById(R.id.idEllaborate);
         contentTV = findViewById(R.id.idTVContent);
-        newsIV = findViewById(R.id.idIVnews);
+        newsTV = findViewById(R.id.idIVnews);
         readNewsBtn = findViewById(R.id.idBtnReadNews);
 
-        Picasso.get().load(imageURL).into(newsIV);
+
         titleTV.setText(title);
         subDescTV.setText(desc);
         contentTV.setText(content);
-        
+
         readNewsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -52,6 +53,6 @@ public class NewsDetail extends AppCompatActivity {
         
 
 
-                // idBtnReadNews;idIVnews;idEllaborate,idTVContent,idTVTitle;
+
     }
 }
