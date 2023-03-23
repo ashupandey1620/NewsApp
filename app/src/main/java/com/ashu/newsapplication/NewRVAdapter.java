@@ -67,6 +67,8 @@ public class NewRVAdapter extends RecyclerView.Adapter<NewRVAdapter.ViewHolder> 
             elaborateTv=itemView.findViewById(R.id.idTVellaboration);
             newsImageview=itemView.findViewById(R.id.idIVnews);
 
+
+
         }
     }
 
