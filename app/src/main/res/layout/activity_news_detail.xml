@@ -112,7 +112,7 @@
         android:layout_marginBottom="20dp"
         android:background="@color/yellow"
         android:backgroundTint="@color/yellow"
-        android:text="Read full news"
+        android:text="@string/read_full_news"
         android:textAllCaps="false"/>
 
 </RelativeLayout>
