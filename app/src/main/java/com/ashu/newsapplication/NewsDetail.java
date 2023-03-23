@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso;
 public class NewsDetail extends AppCompatActivity {
     String title,desc,content,imageURL,url;
     private TextView titleTV,subDescTV,contentTV;
-    private ImageView newsTV;
+    private ImageView newsIV;
     private Button readNewsBtn;
 
     @Override
@@ -30,12 +30,12 @@ public class NewsDetail extends AppCompatActivity {
         titleTV= findViewById(R.id.idTVTitle);
         subDescTV= findViewById(R.id.idEllaborate);
         contentTV = findViewById(R.id.idTVContent);
-        newsTV = findViewById(R.id.idIVnews);
+        newsIV = findViewById(R.id.idIVnews);
         readNewsBtn = findViewById(R.id.idBtnReadNews);
 
 
 
-        Picasso.get().load(imageURL).into(newsTV);
+        Picasso.get().load(imageURL).into(newsIV);
 
 
 
