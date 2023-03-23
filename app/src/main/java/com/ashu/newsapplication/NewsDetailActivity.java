@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
-public class NewsDetail extends AppCompatActivity {
+public class NewsDetailActivity extends AppCompatActivity {
     String title,desc,content,imageURL,url;
     private TextView titleTV,subDescTV,contentTV;
     private ImageView newsIV;
@@ -20,7 +20,7 @@ public class NewsDetail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news_detail);
+        setContentView(R.layout.activity_news_detail2);
         title = getIntent().getStringExtra("title");
         content = getIntent().getStringExtra("content");
         desc = getIntent().getStringExtra("desc");
@@ -51,11 +51,11 @@ public class NewsDetail extends AppCompatActivity {
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
-                
+
             }
         });
-        
-        
+
+
 
 
 

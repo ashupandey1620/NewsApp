@@ -15,12 +15,8 @@
         android:theme="@style/Theme.NewsApplication"
         tools:targetApi="31">
         <activity
-            android:name=".NewsDetail"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".NewsDetailActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
