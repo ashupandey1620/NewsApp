@@ -40,6 +40,7 @@ public class NewsDetail extends AppCompatActivity {
         subDescTV.setText(desc);
         contentTV.setText(content);
 
+
         readNewsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
