@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ellaboration"
+            android:text="@string/ellaboration"
             android:layout_below="@+id/idTVheading"
             android:textColor="@color/white"
             android:maxLines="4"
