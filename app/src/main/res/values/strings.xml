@@ -2,4 +2,5 @@
     <string name="app_name">News  Application</string>
     <string name="title">Title</string>
     <string name="elaborate">elaborate</string>
+    <string name="content">Content</string>
 </resources>
