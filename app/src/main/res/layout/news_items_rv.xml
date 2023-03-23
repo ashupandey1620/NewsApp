@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/idTVheading"
             android:layout_below="@+id/idIVnews"
-            android:text="New Heading"
+            android:text="@string/new_heading"
             android:textStyle="bold"
             android:textSize="18sp"
             android:padding="3dp"
