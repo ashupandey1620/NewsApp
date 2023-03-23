@@ -27,23 +27,15 @@ public class NewsDetail extends AppCompatActivity {
         imageURL = getIntent().getStringExtra("image");
         url = getIntent().getStringExtra("url");
 
-
-
-
-
         titleTV= findViewById(R.id.idTVTitle);
         subDescTV= findViewById(R.id.idEllaborate);
         contentTV = findViewById(R.id.idTVContent);
         newsIV = findViewById(R.id.idIVnews);
         readNewsBtn = findViewById(R.id.idBtnReadNews);
 
-
-
-        titleTV.setText(title);
         subDescTV.setText(desc);
+        titleTV.setText(title);
         contentTV.setText(content);
-
-
 
         Picasso.get().load(imageURL).into(newsIV);
 
