@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black_shade_1"
-    tools:context=".NewsDetail">
+    tools:context=".NewsDetailActivity">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -23,7 +23,7 @@
                 android:gravity="center"
                 android:padding="7dp"
                 android:textAlignment="center"
-                android:text="YOUR NEWS"
+                android:text="@string/your_news"
                 android:background="@color/black_shade_1"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"/>
