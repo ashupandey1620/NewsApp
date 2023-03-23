@@ -24,6 +24,7 @@ public class NewsDetail extends AppCompatActivity {
         title = getIntent().getStringExtra("title");
         content = getIntent().getStringExtra("content");
         desc = getIntent().getStringExtra("desc");
+
         imageURL = getIntent().getStringExtra("image");
         url = getIntent().getStringExtra("url");
 

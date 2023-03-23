@@ -40,7 +40,7 @@
 
          <RelativeLayout
              android:layout_width="match_parent"
-             android:layout_height="match_parent">
+             android:layout_height="wrap_content">
 
 
              <ImageView
@@ -68,7 +68,7 @@
                  android:layout_marginRight="4dp"
                  android:layout_marginBottom="4dp"
                  android:padding="4dp"
-                 android:text="Title"
+                 android:text="@string/title"
                  android:textColor="@color/yellow"
                  android:textSize="20sp"
                  android:textStyle="bold" />
@@ -85,7 +85,7 @@
                  android:layout_marginRight="4dp"
                  android:layout_marginBottom="4dp"
                  android:padding="4dp"
-                 android:text="elaborate"
+                 android:text="@string/elaborate"
                  android:textColor="@color/white"
                  android:textSize="18sp" />
 
