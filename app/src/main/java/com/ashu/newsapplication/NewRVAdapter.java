@@ -53,10 +53,10 @@ public class NewRVAdapter extends RecyclerView.Adapter<NewRVAdapter.ViewHolder> 
         });
     }
 
-    @Override
-    public int getItemCount() {
-        return articlesArrayList.size();
-    }
+
+
+
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView titleTV,elaborateTv;
@@ -69,4 +69,14 @@ public class NewRVAdapter extends RecyclerView.Adapter<NewRVAdapter.ViewHolder> 
 
         }
     }
+
+
+
+
+
+    @Override
+    public int getItemCount() {
+        return articlesArrayList.size();
+    }
+
 }
