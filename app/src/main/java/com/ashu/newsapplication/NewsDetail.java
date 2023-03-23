@@ -22,18 +22,22 @@ public class NewsDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_detail);
         title = getIntent().getStringExtra("title");
-        desc = getIntent().getStringExtra("desc");
         content = getIntent().getStringExtra("content");
+        desc = getIntent().getStringExtra("desc");
         imageURL = getIntent().getStringExtra("image");
         url = getIntent().getStringExtra("url");
-
-        Picasso.get().load(imageURL).into(newsTV);
 
         titleTV= findViewById(R.id.idTVTitle);
         subDescTV= findViewById(R.id.idEllaborate);
         contentTV = findViewById(R.id.idTVContent);
         newsTV = findViewById(R.id.idIVnews);
         readNewsBtn = findViewById(R.id.idBtnReadNews);
+
+
+
+        Picasso.get().load(imageURL).into(newsTV);
+
+
 
 
         titleTV.setText(title);
