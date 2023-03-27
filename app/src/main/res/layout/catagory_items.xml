@@ -21,17 +21,16 @@
             />
 
         <TextView
+            android:id="@+id/idTvCategories"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:layout_centerInParent="true"
-            android:text="categories"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textAlignment="center"
+            android:gravity="center"
             android:padding="3dp"
-            android:id="@+id/idTvCategories"
-            />
+            android:text="categories"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
 
 

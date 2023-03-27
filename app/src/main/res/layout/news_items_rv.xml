@@ -5,7 +5,7 @@
     android:layout_margin="8dp"
     android:layout_height="wrap_content"
     app:cardCornerRadius="4dp"
-    app:cardBackgroundColor="@color/grey"
+    app:cardBackgroundColor="@color/black"
     >
 
     <RelativeLayout
@@ -24,6 +24,7 @@
             android:id="@+id/idTVheading"
             android:layout_below="@+id/idIVnews"
             android:text="@string/new_heading"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18sp"
             android:padding="3dp"
