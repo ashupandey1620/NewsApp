@@ -11,32 +11,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/idToolbar"
+        android:background="@color/light_cyan"
         >
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             >
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/news_app"
-                android:textColor="@color/yellow"
+                android:text="News"
+                android:textColor="@color/goldenrod"
                 android:gravity="center"
-                android:layout_marginEnd="15dp"
                 android:textAlignment="center"
-                android:padding="4dp"
-
+                android:padding="8dp"
                 android:textStyle="bold"
-                android:layout_marginRight="15dp" />
+                 />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVhorizonatal"
         android:layout_width="match_parent"
+        android:background="@color/light_cyan"
         android:layout_height="wrap_content"
         android:layout_below="@+id/idToolbar"
-        android:layout_marginTop="6dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/catagory_items" />
@@ -47,7 +46,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/idRVhorizonatal"
         android:id="@+id/idRVvertical"
-        android:layout_marginTop="5dp"
+        android:background="@color/light_cyan"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
         />
