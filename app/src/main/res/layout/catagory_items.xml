@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="130dp"
-    android:layout_margin="5dp"
-    android:layout_height="70dp"
+    android:layout_margin="10dp"
+    android:layout_height="50dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
     app:cardCornerRadius="8dp"
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         >
         <ImageView
-            android:src="@color/dark_slate_gray"
+            android:src="@color/dark_white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
         android:id="@+id/idIVcategory"
@@ -27,9 +27,10 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             android:padding="3dp"
+            android:textSize="18sp"
             android:text="categories"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
 
