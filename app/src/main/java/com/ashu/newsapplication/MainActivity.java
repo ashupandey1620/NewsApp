@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         newsRV.setLayoutManager(new LinearLayoutManager(this));
         newsRV.setAdapter(newRVAdapter);
         categoryRV.setAdapter(categoryRVAdapter);
-gettingCatagories();
+//gettingCatagories();
 getNews("All");
 newRVAdapter.notifyDataSetChanged();
 
     }
 
-    private void gettingCatagories()
+ /**   private void gettingCatagories()
     {
         categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","All"));
         categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1591131734170-f736a72437a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1233&q=80","Technology"));
@@ -61,7 +61,7 @@ newRVAdapter.notifyDataSetChanged();
         categoryRVModuleArrayList.add(new CategoryRVModule("https://plus.unsplash.com/premium_photo-1663014639685-5ba9af525133?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Health"));
 
         categoryRVAdapter.notifyDataSetChanged();
-    }
+    }*/
 
 
     private void getNews(String category)
