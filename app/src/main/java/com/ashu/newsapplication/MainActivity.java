@@ -43,25 +43,25 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
         newsRV.setLayoutManager(new LinearLayoutManager(this));
         newsRV.setAdapter(newRVAdapter);
         categoryRV.setAdapter(categoryRVAdapter);
-//gettingCatagories();
+gettingCatagories();
 getNews("All");
 newRVAdapter.notifyDataSetChanged();
 
     }
 
- /**   private void gettingCatagories()
+  private void gettingCatagories()
     {
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","All"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1591131734170-f736a72437a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1233&q=80","Technology"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80","Science"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Sports"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80","General"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Business"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1586899028174-e7098604235b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80","Entertainment"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("https://plus.unsplash.com/premium_photo-1663014639685-5ba9af525133?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Health"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","All"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","Technology"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","Science"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","Sports"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","General"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","Business"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","Entertainment"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("","Health"));
 
         categoryRVAdapter.notifyDataSetChanged();
-    }*/
+    }
 
 
     private void getNews(String category)
