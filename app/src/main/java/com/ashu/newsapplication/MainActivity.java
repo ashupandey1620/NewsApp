@@ -51,14 +51,14 @@ newRVAdapter.notifyDataSetChanged();
 
   private void gettingCatagories()
     {
-        categoryRVModuleArrayList.add(new CategoryRVModule("","All"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","Technology"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","Science"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","Sports"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","General"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","Business"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","Entertainment"));
-        categoryRVModuleArrayList.add(new CategoryRVModule("","Health"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","All"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Technology"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Science"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Sports"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","General"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Business"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Entertainment"));
+        categoryRVModuleArrayList.add(new CategoryRVModule("https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80","Health"));
 
         categoryRVAdapter.notifyDataSetChanged();
     }
